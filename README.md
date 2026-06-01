@@ -79,7 +79,7 @@ The [`fork-private-sync` skill](skills/fork-private-sync/SKILL.md) tells Claude 
 
 **Get the skill — pick one:**
 
-- **Copy** — open [`SKILL.md`](skills/fork-private-sync/SKILL.md) on GitHub and click the copy icon (📋) in the top-right of the file view to copy the full contents
+- **Copy** — open [`SKILL.md`](skills/fork-private-sync/SKILL.md) on GitHub and click the copy icon in the top-right of the file view to copy the full contents
 - **Download** — [download `SKILL.md`](https://github.com/petrocasek/github-fork-sync/raw/main/skills/fork-private-sync/SKILL.md) directly
 
 **Then paste it into Claude with your request, for example:**
