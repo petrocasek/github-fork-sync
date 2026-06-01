@@ -1,6 +1,7 @@
 ---
 name: fork-private-sync
-description: Automates A-to-Z: fork a public GitHub repo, make the fork private, and set up automatic daily sync with the upstream. Use this whenever someone wants to privately maintain a copy of a public repo — for example forking obra/superpowers (Claude Code skills) for their org, or any case where someone says "fork X privately", "keep my fork synced with upstream", "private fork with auto-sync", or "maintain a private copy of a public repo". Especially relevant for teams managing shared Claude Code skills or any shared tooling they want to customize without exposing to the public. If someone mentions forking + privacy + automation in the same breath, use this skill.
+description: >-
+  Automates A-to-Z: fork a public GitHub repo, make the fork private, and set up automatic daily sync with the upstream. Use this whenever someone wants to privately maintain a copy of a public repo — for example forking obra/superpowers (Claude Code skills) for their org, or any case where someone says "fork X privately", "keep my fork synced with upstream", "private fork with auto-sync", or "maintain a private copy of a public repo". Especially relevant for teams managing shared Claude Code skills or any shared tooling they want to customize without exposing to the public. If someone mentions forking + privacy + automation in the same breath, use this skill.
 ---
 
 # Fork Private Sync
