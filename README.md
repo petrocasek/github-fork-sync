@@ -18,8 +18,8 @@ The same pattern applies anywhere you want to privately maintain and customize a
 
 | File | Purpose |
 |------|---------|
-| `.github/workflows/sync-upstream.yml` | GitHub Actions workflow — runs daily, syncs your fork with upstream |
-| `skills/fork-private-sync/SKILL.md` | Claude Code skill — automates the entire setup via browser |
+| [`.github/workflows/sync-upstream.yml`](.github/workflows/sync-upstream.yml) | GitHub Actions workflow — runs daily, syncs your fork with upstream |
+| [`skills/fork-private-sync/SKILL.md`](skills/fork-private-sync/SKILL.md) | Claude Code skill — automates the entire setup via browser |
 
 ---
 
