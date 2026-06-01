@@ -4,7 +4,7 @@ Fork a public GitHub repo, make it private, and keep it automatically synced wit
 
 ## Why you'd want this
 
-**Concrete example:** Suppose your team uses [Claude Code](https://claude.ai/code) and you want to manage a shared set of skills (via [obra/superpowers](https://github.com/obra/superpowers)) for your entire organization. To do this, you need to:
+**Concrete example:** Suppose your team uses [Claude Code](https://claude.ai/code) and you want to manage a shared set of skills (for example [obra/superpowers](https://github.com/obra/superpowers)) for your entire organization. To do this, you need to:
 
 1. Fork the public skills repo into your org's private GitHub
 2. Keep it **private** so you can add internal customizations without exposing them
