@@ -75,13 +75,24 @@ The workflow now runs every day at **06:00 UTC** automatically. No further setup
 
 ## Option B: Let Claude do it
 
-If you have [Claude Code](https://claude.ai/code) with the [superpowers](https://github.com/obra/superpowers) skills framework, install the `fork-private-sync` skill from [`skills/fork-private-sync/SKILL.md`](skills/fork-private-sync/SKILL.md).
+The [`fork-private-sync` skill](skills/fork-private-sync/SKILL.md) tells Claude exactly what to do — it will open GitHub in Chrome and handle every step: fork, leave fork network, make private, add the sync workflow, and test it.
 
-Then just say:
+**Get the skill — pick one:**
 
-> *"Fork https://github.com/obra/superpowers privately into my org and set up daily sync"*
+- **Copy** — open [`SKILL.md`](skills/fork-private-sync/SKILL.md) on GitHub and click the copy icon (📋) in the top-right of the file view to copy the full contents
+- **Download** — [download `SKILL.md`](https://github.com/petrocasek/github-fork-sync/raw/main/skills/fork-private-sync/SKILL.md) directly
 
-Claude will open GitHub in Chrome and handle every step — fork, make private, create the workflow file, test it — and report back when done.
+**Then paste it into Claude with your request, for example:**
+
+```
+[paste SKILL.md contents here]
+
+---
+
+Fork https://github.com/obra/superpowers privately into my GitHub account and set up daily upstream sync.
+```
+
+Claude will take it from there.
 
 ---
 
