@@ -32,18 +32,29 @@ Use browser tools (Claude in Chrome) to click through GitHub. Open the repo in a
 
 ---
 
-### Step 2: Make the fork private
+### Step 2: Leave the fork network
+
+GitHub won't let you make a fork private while it's still connected to the upstream fork network. You must detach it first.
 
 1. In the newly created fork, click **Settings** (top nav)
 2. Scroll all the way down to **Danger Zone**
-3. Click **Change repository visibility**
-4. Select **Make private**
-5. Type the repository name to confirm
-6. Click the confirmation button
+3. Click **Leave fork network** (or "Convert to independent repository")
+4. Type the repository name to confirm
+5. Click the confirmation button
 
 ---
 
-### Step 3: Create the sync workflow
+### Step 3: Make the fork private
+
+1. Still in **Settings** → **Danger Zone**
+2. Click **Change repository visibility**
+3. Select **Make private**
+4. Type the repository name to confirm
+5. Click the confirmation button
+
+---
+
+### Step 4: Create the sync workflow
 
 Navigate to the fork root. Create the file `.github/workflows/sync-upstream.yml`:
 
@@ -90,7 +101,7 @@ jobs:
 
 ---
 
-### Step 4: Test the workflow
+### Step 5: Test the workflow
 
 1. Click the **Actions** tab in the fork
 2. In the left sidebar, click **Sync upstream**
@@ -100,7 +111,7 @@ jobs:
 
 ---
 
-### Step 5: Confirm to the user
+### Step 6: Confirm to the user
 
 Report back with:
 - **Fork URL** (e.g., `https://github.com/their-org/superpowers`)

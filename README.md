@@ -37,14 +37,22 @@ The same pattern applies anywhere you want to privately maintain and customize a
 3. Select your account or org as the destination
 4. Click **Create fork**
 
-### Step 2: Make the fork private
+### Step 2: Leave the fork network
+
+GitHub won't allow changing visibility to private while the repo is still part of the upstream fork network — you must detach it first.
 
 1. In your new fork, go to **Settings**
-2. Scroll to **Danger Zone** at the bottom of the page
-3. Click **Change repository visibility** → **Make private**
+2. Scroll to **Danger Zone** at the bottom
+3. Click **Leave fork network** (or "Convert to independent repository")
 4. Type the repo name to confirm, then click the confirmation button
 
-### Step 3: Add the sync workflow
+### Step 3: Make the fork private
+
+1. Still in **Settings** → **Danger Zone**
+2. Click **Change repository visibility** → **Make private**
+3. Type the repo name to confirm, then click the confirmation button
+
+### Step 4: Add the sync workflow
 
 1. In your fork, click **Add file** → **Create new file**
 2. Name it: `.github/workflows/sync-upstream.yml`
@@ -52,14 +60,14 @@ The same pattern applies anywhere you want to privately maintain and customize a
 4. Replace `UPSTREAM_URL_HERE` with your upstream URL (e.g., `https://github.com/obra/superpowers.git`)
 5. Click **Commit changes…** → **Commit directly to main** → **Commit changes**
 
-### Step 4: Test it
+### Step 5: Test it
 
 1. In your fork, go to the **Actions** tab
 2. Click **Sync upstream** in the left sidebar
 3. Click **Run workflow** → **Run workflow** (green button)
 4. Wait ~10 seconds — you should see a green ✓
 
-### Step 5: Done
+### Step 6: Done
 
 The workflow now runs every day at **06:00 UTC** automatically. No further setup needed — `GITHUB_TOKEN` is provided automatically by GitHub Actions, no secrets to configure.
 
