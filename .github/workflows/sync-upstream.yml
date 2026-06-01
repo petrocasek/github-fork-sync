@@ -1,0 +1,31 @@
+name: Sync upstream
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          ref: main
+
+      - name: Sync with upstream
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote add upstream UPSTREAM_URL_HERE
+          git fetch upstream
+          if git merge upstream/main --ff-only; then
+            git push origin main
+          else
+            echo "Cannot fast-forward — upstream and fork have diverged. Skipping."
+            exit 0
+          fi
