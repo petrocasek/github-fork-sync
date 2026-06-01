@@ -18,7 +18,7 @@ If either is missing, ask. Don't proceed without both.
 
 ## Requirements
 
-This skill requires **Claude Code** with the **Claude in Chrome** browser extension active. It works by controlling Chrome to click through GitHub — it will not work in Claude.ai chat, which has no browser control.
+This skill requires the **Claude desktop app** (or **Claude Code**) with the **Claude in Chrome** browser extension active. It works by controlling Chrome to click through GitHub — it will **not** work in the Claude.ai web chat, which has no browser control.
 
 If browser tools are not available, tell the user and point them to Option A (manual setup) in https://github.com/petrocasek/github-fork-sync.
 

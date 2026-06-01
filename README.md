@@ -77,7 +77,7 @@ The workflow now runs every day at **06:00 UTC** automatically. No further setup
 
 The [`fork-private-sync` skill](skills/fork-private-sync/SKILL.md) tells Claude exactly what to do — it will open GitHub in Chrome and handle every step: fork, leave fork network, make private, add the sync workflow, and test it.
 
-> **Prerequisites:** This requires [Claude Code](https://claude.ai/code) (not Claude.ai chat) with the **Claude in Chrome** browser extension connected. Claude needs browser control to click through GitHub — Claude.ai chat doesn't have this capability.
+> **Prerequisites:** This requires the **Claude desktop app** (or [Claude Code](https://claude.ai/code)) with the **Claude in Chrome** browser extension connected. Claude needs browser control to click through GitHub. The **Claude.ai web chat does not work** — it has no browser control.
 
 **Get the skill — pick one:**
 
