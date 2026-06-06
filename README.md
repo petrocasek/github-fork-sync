@@ -18,7 +18,7 @@ The same pattern applies anywhere you want to privately maintain and customize a
 
 | File | Purpose |
 |------|---------|
-| [`.github/workflows/sync-upstream.yml`](.github/workflows/sync-upstream.yml) | GitHub Actions workflow — runs daily, syncs your fork with upstream |
+| [`template/sync-upstream.yml`](template/sync-upstream.yml) | GitHub Actions workflow template — you copy this into your fork at `.github/workflows/`, where it runs daily and syncs with upstream |
 | [`skills/fork-private-sync/SKILL.md`](skills/fork-private-sync/SKILL.md) | Skill that automates the entire setup — requires the Claude desktop app (or Claude Code) with the Claude in Chrome extension; the Claude.ai web chat does not work |
 
 ---
@@ -56,7 +56,7 @@ GitHub won't allow changing visibility to private while the repo is still part o
 
 1. In your fork, click **Add file** → **Create new file**
 2. Name it: `.github/workflows/sync-upstream.yml`
-3. Copy the contents of [`sync-upstream.yml`](.github/workflows/sync-upstream.yml) from this repo
+3. Copy the contents of [`template/sync-upstream.yml`](template/sync-upstream.yml) from this repo
 4. Replace `UPSTREAM_URL_HERE` with your upstream URL (e.g., `https://github.com/obra/superpowers.git`)
 5. Click **Commit changes…** → **Commit directly to main** → **Commit changes**
 
